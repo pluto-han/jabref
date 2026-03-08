@@ -456,6 +456,7 @@ public class JabRefFrame extends BorderPane implements LibraryTabContainer, UiMe
                 stateManager.setActiveDatabase(null);
                 stateManager.activeTabProperty().set(Optional.empty());
                 stateManager.setSelectedEntries(List.of());
+                stateManager.getEditorShowing().set(false);
                 mainStage.titleProperty().unbind();
                 mainStage.setTitle(FRAME_TITLE);
             }
